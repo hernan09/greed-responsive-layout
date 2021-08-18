@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import "weather-icons/css/weather-icons.css";
 import {
   BrowserRouter as Router,
   Switch,
