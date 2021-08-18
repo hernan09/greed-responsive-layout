@@ -71,6 +71,9 @@
       grid-column: 1/4;
       background-color: white;
     }
+    .widget1__about {
+        grid-column: 1/4;
+       }
   
   }
   @media ( max-width:425px){
