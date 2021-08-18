@@ -51,7 +51,7 @@ const WeatherComponent = () => {
           .catch((error) => console.log('error', error));
       }
     });
-  });
+  },[]);
   //api.openweathermap.org/data/2.5/weather?lat=-34.7008819&lon=-58.36031500000001&appid=f20b66a33b32ecfc690c95d0e610f495
 
  const getWeatherIcon = rangedId => {
@@ -109,7 +109,7 @@ const WeatherComponent = () => {
         <ReactLoading
           type="spinningBubbles"
           className="spiner_"
-          color={'white'}
+          color={'#55a8fd'}
         ></ReactLoading>
       ) : (
         <div className="container_weather">
@@ -121,7 +121,6 @@ const WeatherComponent = () => {
             <h2 className="py-2 temp_data">Temp: {Temp}&deg;C</h2>
             {MinmaxTemp()}
           </span>
-          <h3 className="py-3 content_clima">{TransformClimaToSpanish(id)}</h3>
         </div>
       )}
     </div>

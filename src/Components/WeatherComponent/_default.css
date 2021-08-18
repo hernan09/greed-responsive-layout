@@ -1,44 +1,21 @@
 .container_weather {
-  height: 130px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 140px;
 }
 .container_weather > h1 {
-  color: white;
+  color: #ffc107;
 }
 .temp_data {
-  color: white;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 15%;
-}
-.spiner_ {
-  position: relative;
-  left: 40%;
-  top: 100px;
-}
-
-.content_clima {
-  color: #ffc107;
-  position: relative;
-  top: 50px;
+  margin-left: 44px;
 }
 .content_values_temp {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 20%;
-  color: white;
+  color: #55a8fd;
+  font-weight: 700;
+  font-size: 18px;
 }
-.positionIcon {
-  position: relative;
-  top: 10px;
-  left: 101px;
-  width: 70px;
-  color: white;
+.container_weather > span >img {
+  width: 73px;
+  margin-left: 90px;
 }
+

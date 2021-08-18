@@ -1,0 +1,90 @@
+
+.body_app {
+  width: 100%;
+  background: url('../../images/city-nawpic.jpg'),
+    linear-gradient(to right, #000046, #1cb5e0);
+  background-size: cover;
+  background-blend-mode: overlay; 
+  
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,auto);
+  background-attachment: fixed;
+}
+
+p {
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.body_app > div {
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.body_app > div > h3 {
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+.header__widget {
+  background-color: rgb(193, 196, 197);
+  grid-column: 1/4;
+}
+.main {
+  color: black;
+  grid-column: span 2;
+  background-color: white;
+}
+.aside {
+  grid-column: 3/4;
+  grid-row: span 2;
+  background-color: white;
+}
+.widget1 {
+  background-color: #55a8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+.widget1 > h3 {
+  color: white;
+}
+.widget2 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+.footer__widget{
+  grid-column: 1/4;
+  background-color: rgb(193, 196, 197);
+}
+.footer__widget2 {
+  grid-column: 1/4;
+  background-color: rgb(193, 196, 197);
+}
+@media ( max-width:768px){
+  .main {
+    grid-column: 1/4;
+  }
+  .aside {
+    grid-column: 1/4;
+    background-color: white;
+  }
+  .widget2 {
+   grid-column: 2/4;
+  }
+}
+@media ( max-width:425px){
+  .widget1 {
+    grid-column: 1/4;
+   }
+  .widget2 {
+   grid-column: 1/4;
+  }
+}

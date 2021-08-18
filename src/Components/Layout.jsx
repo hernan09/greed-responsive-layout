@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import './layaout.css';
-import WeatherComponent from './WeatherComponent/default';
-import FormComponentData from './FormDataEntry/default';
+import React, { Component } from "react";
+import ModalImage from "react-modal-image";
+import "./layaout.css";
+import FormComponentData from "./FormDataEntry/default";
+
 
 class LayoutPage extends Component {
   constructor(props) {
@@ -10,9 +11,9 @@ class LayoutPage extends Component {
   }
   render() {
     return (
-      <>
-        <WeatherComponent></WeatherComponent>
-      </>
+      <div className="body__container">
+        <FormComponentData />
+      </div>
     );
   }
 }

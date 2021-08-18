@@ -6,7 +6,18 @@
 }
 
 .form_container > .row > .btn {
-  max-width: 250px;
+  max-width: 300px;
   margin: auto;
   margin-top: 10px;
+}
+
+.content_data {
+  color: white;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
