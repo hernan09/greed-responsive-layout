@@ -22,6 +22,7 @@ const WeatherComponent = () => {
   const [ City , setCity ] = useState('')
 
   useEffect(() => {
+   let unmounted = false;
     navigator.geolocation.getCurrentPosition(function (position) {
       setLati(position.coords.latitude);
       setLong(position.coords.longitude);
@@ -51,6 +52,7 @@ const WeatherComponent = () => {
           .catch((error) => console.log('error', error));
       }
     });
+    return () => { unmounted = true };
   },[]);
   //api.openweathermap.org/data/2.5/weather?lat=-34.7008819&lon=-58.36031500000001&appid=f20b66a33b32ecfc690c95d0e610f495
 

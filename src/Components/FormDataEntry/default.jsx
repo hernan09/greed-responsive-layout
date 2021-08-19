@@ -1,6 +1,6 @@
 import React from "react";
 import "./_default.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "../../customHook/CustomForm/index";
 
 const FormComponentData = () => {
@@ -10,14 +10,6 @@ const FormComponentData = () => {
     pasword: "",
   });
   const { name, email, pasword } = formState;
-
-  useEffect(() => {
-    console.log("montado");
-
-    return () => {
-      console.log("desmontado");
-    };
-  }, []);
 
   const [bolean, setBolean] = useState(false);
 
@@ -53,17 +45,6 @@ const FormComponentData = () => {
             aria-label="Sigla"
             name="email"
             value={email}
-            onChange={HandleInputChange}
-          />
-        </div>
-        <div className="col-12">
-          <input
-            type="password"
-            className="form-control"
-            placeholder="password"
-            aria-label="Sigla"
-            name="pasword"
-            value={pasword}
             onChange={HandleInputChange}
           />
         </div>
