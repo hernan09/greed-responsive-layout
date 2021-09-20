@@ -7,9 +7,8 @@ const FormComponentData = () => {
   const [formState, HandleInputChange] = useForm({
     name: "",
     email: "",
-    pasword: "",
   });
-  const { name, email, pasword } = formState;
+  const { name, email } = formState;
 
   const [bolean, setBolean] = useState(false);
 
@@ -19,7 +18,9 @@ const FormComponentData = () => {
       ...bolean,
       bolean: true,
     });
+  
     console.log(formState);
+    fetch('http://localhost:4000/mailer',{body : JSON.stringify(formState?.[0]?.name),method:'POST'}).then(response => console.log(response))
   };
 
   return (
